@@ -1,0 +1,11 @@
+Description : 
+	this code will reverse Wing G-Code 
+	G-Code is the code which generated using G-Code Generator for CNC Hot wire Machine 
+	This code is generated for one side wing left or write we need both of sides 
+
+	for that this application was developed to reverse the G-Code to generate the other side 
+	
+Input : File contains G-Code for Left or Write Fixed Wing 
+
+Output : File contains G-Code for The other side.
+

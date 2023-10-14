@@ -1,0 +1,4 @@
+Description :
+	This code to execute oncept safty and arm for Fixed Wing plane to protect the launching Team from any unexpected error.
+	it use some of python features like mavlink Lib for connection with Autopilot and swnd some orders to it throw Datalink
+
