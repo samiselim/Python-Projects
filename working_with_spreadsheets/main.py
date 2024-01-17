@@ -10,9 +10,6 @@ inventory_per_supplier = {list_suppliers[i-1]: 0 for i in range(1,len(suppliers)
 product_no_under_10= []
 product_inv_under_10 = []
 
-
-
-print(product_per_supplier)
 for index in range(1,product_count+1):
     product_per_supplier[list(product_list[columns[3]])[index-1]] +=1
     inventory_per_supplier[list(product_list[columns[3]])[index-1]] +=list(product_list[columns[1]])[index-1] * list(product_list[columns[2]])[index-1]
@@ -22,7 +19,10 @@ for index in range(1,product_count+1):
 
 product_under_10 = {product_no_under_10[i]: product_inv_under_10[i] for i in range(len(product_no_under_10))}
 
+# Adding new Column based on existing columns 
+product_list['Total Price'] = product_list['Inventory']*product_list['Price'] 
 
+product_list.to_excel('new_inventory.xlsx' , index=False)
 # All Required Data
 print(product_per_supplier) 
 print(inventory_per_supplier)
